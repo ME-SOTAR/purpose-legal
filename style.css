@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+  --bg:#0f0c1a;
+  --card:rgba(255,255,255,.06);
+  --border:rgba(255,255,255,.12);
+  --text:rgba(255,255,255,.92);
+  --muted:rgba(255,255,255,.65);
+  --accent:#6C3AF2;
+  --accent2:#7C5CFF;
+  --max:980px;
+  --radius:18px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(1000px 600px at 20% 10%, rgba(108,58,242,.35), transparent 55%),
+    radial-gradient(900px 600px at 80% 20%, rgba(124,92,255,.25), transparent 55%),
+    radial-gradient(900px 700px at 50% 100%, rgba(108,58,242,.18), transparent 60%),
+    var(--bg);
+}
+
+a{color:var(--accent2); text-decoration:none}
+a:hover{text-decoration:underline}
+
+.wrap{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:28px 18px 44px;
+}
+
+.header{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:14px 16px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  backdrop-filter: blur(10px);
+}
+
+.logo{
+  width:56px; height:56px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.04);
+  object-fit:contain;
+}
+
+.hgroup h1{
+  margin:0;
+  font-size:20px;
+  letter-spacing:-0.2px;
+}
+.hgroup p{
+  margin:4px 0 0;
+  color:var(--muted);
+  font-size:13px;
+}
+
+.nav{
+  margin-top:14px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 12px;
+  border-radius:999px;
+  border:1px solid rgba(108,58,242,.25);
+  background:rgba(108,58,242,.12);
+  color:rgba(255,255,255,.9);
+}
+
+.pill:hover{
+  background:rgba(108,58,242,.18);
+  text-decoration:none;
+}
+
+.card{
+  margin-top:14px;
+  padding:16px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+}
+
+.card h2{
+  margin:0 0 10px;
+  font-size:15px;
+  letter-spacing:-0.1px;
+}
+.card p, .card li{
+  color:var(--muted);
+  font-size:13.5px;
+  line-height:1.55;
+}
+.card ol{margin:8px 0 0; padding-left:18px}
+.small{
+  margin-top:14px;
+  color:rgba(255,255,255,.5);
+  font-size:12px;
+  text-align:center;
+}
+
+hr{
+  border:none;
+  height:1px;
+  background:rgba(255,255,255,.10);
+  margin:14px 0;
+}
